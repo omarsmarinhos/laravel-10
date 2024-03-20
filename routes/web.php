@@ -24,7 +24,7 @@ Route::get('blog', function () {
 })->name('blog');
 
 Route::get('blog/{slug}', function ($slug) {
-    // consulta en base de datos con el slug
+    // consulta en base de datos con el slug 
     $post = $slug;
     return view('post', ['post' => $post]);
 })->name('post');
